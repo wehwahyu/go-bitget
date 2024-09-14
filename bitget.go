@@ -32,7 +32,7 @@ type Client struct {
 	spotMarketService  *spot.SpotMarketClient
 	spotOrderService   *spot.SpotOrderClient
 	spotPublicService  *spot.SpotPublicClient
-	//spotWalletService	*spot.SpotWalletClient			// @todo
+	spotWalletService  *spot.SpotWalletClient
 
 	userService    *v2.UserClient
 	accountService *v2.AccountClient
@@ -124,11 +124,9 @@ func (c *Client) GetSpotPublicService() *spot.SpotPublicClient {
 	return c.spotPublicService
 }
 
-/* @todo
 func (c *Client) NewSpotWalletService() *spot.SpotWalletClient {
 	return c.spotWalletService
 }
-//*/
 
 // ws
 type WsClient struct {

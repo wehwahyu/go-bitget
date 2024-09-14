@@ -5,16 +5,16 @@ import (
 	"github.com/wehwahyu/go-bitget/internal/common"
 )
 
-type SpotWalletApi struct {
+type SpotWalletClient struct {
 	BitgetRestClient *common.BitgetRestClient
 }
 
-func (p *SpotWalletApi) Init() *SpotWalletApi {
+func (p *SpotWalletClient) Init() *SpotWalletClient {
 	p.BitgetRestClient = new(common.BitgetRestClient).Init()
 	return p
 }
 
-func (p *SpotWalletApi) Transfer(params map[string]string) (string, error) {
+func (p *SpotWalletClient) Transfer(params map[string]string) (string, error) {
 	postBody, jsonErr := internal.ToJson(params)
 	if jsonErr != nil {
 		return "", jsonErr
@@ -23,12 +23,12 @@ func (p *SpotWalletApi) Transfer(params map[string]string) (string, error) {
 	return resp, err
 }
 
-func (p *SpotWalletApi) DepositAddress(params map[string]string) (string, error) {
+func (p *SpotWalletClient) DepositAddress(params map[string]string) (string, error) {
 	resp, err := p.BitgetRestClient.DoGet("/api/v2/spot/wallet/deposit-address", params)
 	return resp, err
 }
 
-func (p *SpotWalletApi) Withdrawal(params map[string]string) (string, error) {
+func (p *SpotWalletClient) Withdrawal(params map[string]string) (string, error) {
 	postBody, jsonErr := internal.ToJson(params)
 	if jsonErr != nil {
 		return "", jsonErr
@@ -37,12 +37,12 @@ func (p *SpotWalletApi) Withdrawal(params map[string]string) (string, error) {
 	return resp, err
 }
 
-func (p *SpotWalletApi) WithdrawalRecords(params map[string]string) (string, error) {
+func (p *SpotWalletClient) WithdrawalRecords(params map[string]string) (string, error) {
 	resp, err := p.BitgetRestClient.DoGet("/api/v2/spot/wallet/withdrawal-records", params)
 	return resp, err
 }
 
-func (p *SpotWalletApi) DepositRecords(params map[string]string) (string, error) {
+func (p *SpotWalletClient) DepositRecords(params map[string]string) (string, error) {
 	resp, err := p.BitgetRestClient.DoGet("/api/v2/spot/wallet/deposit-records", params)
 	return resp, err
 }
