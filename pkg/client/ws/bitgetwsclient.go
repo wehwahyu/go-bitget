@@ -1,9 +1,9 @@
 package ws
 
 import (
-	"github.com/yasseldg/bitget/constants"
-	"github.com/yasseldg/bitget/internal/common"
-	"github.com/yasseldg/bitget/internal/model"
+	"github.com/wehwahyu/go-bitget/constants"
+	"github.com/wehwahyu/go-bitget/internal/common"
+	"github.com/wehwahyu/go-bitget/internal/model"
 
 	"github.com/yasseldg/simplego/sLog"
 )

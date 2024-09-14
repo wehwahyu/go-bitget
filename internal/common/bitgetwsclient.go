@@ -5,10 +5,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/yasseldg/bitget/config"
-	"github.com/yasseldg/bitget/constants"
-	"github.com/yasseldg/bitget/internal"
-	"github.com/yasseldg/bitget/internal/model"
+	"github.com/wehwahyu/go-bitget/config"
+	"github.com/wehwahyu/go-bitget/constants"
+	"github.com/wehwahyu/go-bitget/internal"
+	"github.com/wehwahyu/go-bitget/internal/model"
 
 	"github.com/yasseldg/simplego/sLog"
 

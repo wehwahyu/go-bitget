@@ -1,4 +1,4 @@
-module github.com/yasseldg/bitget
+module github.com/wehwahyu/go-bitget
 
 go 1.21
 

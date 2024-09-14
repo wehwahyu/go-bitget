@@ -4,15 +4,15 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/yasseldg/bitget/config"
-	"github.com/yasseldg/bitget/internal/common"
-	"github.com/yasseldg/bitget/internal/model"
-	"github.com/yasseldg/bitget/pkg/client/broker"
-	"github.com/yasseldg/bitget/pkg/client/mix"
-	"github.com/yasseldg/bitget/pkg/client/spot"
-	"github.com/yasseldg/bitget/pkg/client/ws"
+	"github.com/wehwahyu/go-bitget/config"
+	"github.com/wehwahyu/go-bitget/internal/common"
+	"github.com/wehwahyu/go-bitget/internal/model"
+	"github.com/wehwahyu/go-bitget/pkg/client/broker"
+	"github.com/wehwahyu/go-bitget/pkg/client/mix"
+	"github.com/wehwahyu/go-bitget/pkg/client/spot"
+	"github.com/wehwahyu/go-bitget/pkg/client/ws"
 
-	v2 "github.com/yasseldg/bitget/pkg/client/v2"
+	v2 "github.com/wehwahyu/go-bitget/pkg/client/v2"
 )
 
 // client

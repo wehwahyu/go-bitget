@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/yasseldg/bitget/config"
-	"github.com/yasseldg/bitget/constants"
-	"github.com/yasseldg/bitget/internal"
+	"github.com/wehwahyu/go-bitget/config"
+	"github.com/wehwahyu/go-bitget/constants"
+	"github.com/wehwahyu/go-bitget/internal"
 )
 
 type BitgetRestClient struct {

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/yasseldg/bitget/pkg/model/spot/account"
+	"github.com/wehwahyu/go-bitget/pkg/model/spot/account"
 )
 
 func TestSpotAccountClient_Assets(t *testing.T) {

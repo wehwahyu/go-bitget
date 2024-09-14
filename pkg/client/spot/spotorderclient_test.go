@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/yasseldg/bitget/pkg/model/spot/order"
+	"github.com/wehwahyu/go-bitget/pkg/model/spot/order"
 )
 
 func TestSpotOrderClient_Orders(t *testing.T) {

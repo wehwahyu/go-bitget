@@ -1,6 +1,6 @@
 package account
 
-import "github.com/yasseldg/bitget/pkg/model"
+import "github.com/wehwahyu/go-bitget/pkg/model"
 
 type AccountsResp struct {
 	model.BaseResp `json:",inline"`

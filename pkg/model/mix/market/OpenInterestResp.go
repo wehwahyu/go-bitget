@@ -1,6 +1,6 @@
 package market
 
-import "github.com/yasseldg/bitget/pkg/model"
+import "github.com/wehwahyu/go-bitget/pkg/model"
 
 type OpenInterestResp struct {
 	model.BaseResp `json:",inline"`

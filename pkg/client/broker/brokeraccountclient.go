@@ -1,10 +1,10 @@
 package broker
 
 import (
-	"github.com/yasseldg/bitget/constants"
-	"github.com/yasseldg/bitget/internal"
-	"github.com/yasseldg/bitget/internal/common"
-	"github.com/yasseldg/bitget/pkg/model/broker"
+	"github.com/wehwahyu/go-bitget/constants"
+	"github.com/wehwahyu/go-bitget/internal"
+	"github.com/wehwahyu/go-bitget/internal/common"
+	"github.com/wehwahyu/go-bitget/pkg/model/broker"
 )
 
 type BrokerAccountClient struct {

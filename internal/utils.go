@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/yasseldg/bitget/constants"
+	"github.com/wehwahyu/go-bitget/constants"
 	// "github.com/goccy/go-json"
 
 	"github.com/yasseldg/simplego/sLog"
