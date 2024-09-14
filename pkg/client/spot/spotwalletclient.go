@@ -3,6 +3,7 @@ package spot
 import (
 	"github.com/wehwahyu/go-bitget/internal"
 	"github.com/wehwahyu/go-bitget/internal/common"
+	"github.com/wehwahyu/go-bitget/pkg/model/mix/account"
 )
 
 type SpotWalletClient struct {
@@ -28,7 +29,7 @@ func (p *SpotWalletClient) DepositAddress(params map[string]string) (string, err
 	return resp, err
 }
 
-func (p *SpotWalletClient) Withdrawal(params map[string]string) (string, error) {
+func (p *SpotWalletClient) Withdrawal(params account.WithdrawReq) (string, error) {
 	postBody, jsonErr := internal.ToJson(params)
 	if jsonErr != nil {
 		return "", jsonErr
